@@ -7,19 +7,23 @@ namespace Code.Lesson1.Task1
     {
         private Unit _unit;
         private float _time;
-        public bool IsWorking = false;
+        private bool _isWorking = false;
 
         private void Start()
         {
             _unit = new Unit(0);
-
-            if (!IsWorking) StartCoroutine(RecieveHealing());
+            RecieveHealing();
         }
 
-        public IEnumerator RecieveHealing()
+        private void RecieveHealing()
+        {
+            if (!_isWorking) StartCoroutine(Health());
+        }
+
+        private IEnumerator Health()
         {
             _time = 0;
-            IsWorking = true;
+            _isWorking = true;
             while (_unit.Health <= 100 && _unit.Health + 5 <= 100 && _time < 3)
             {
                 _time += 0.5f;
@@ -28,7 +32,7 @@ namespace Code.Lesson1.Task1
                 Debug.Log(_unit.Health);
             }
 
-            IsWorking = false;
+            _isWorking = false;
         }
     }
 }
