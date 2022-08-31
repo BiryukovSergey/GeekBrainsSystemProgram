@@ -351,8 +351,9 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
-"Assets/Code/Lesson1/Task1/Unit.cs"
-"Assets/Code/Lesson1/Task1/Worker.cs"
+"Assets/Code/Lesson1/Home1/Unit.cs"
+"Assets/Code/Lesson1/Home1/Worker.cs"
+"Assets/Code/Lesson1/Home2/Test.cs"
 -langversion:9.0
 
 /deterministic
