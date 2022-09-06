@@ -61,6 +61,7 @@ public class Client : MonoBehaviour
                     break;
                 case NetworkEventType.ConnectEvent:
                     onMessageReceive?.Invoke($"You have been connected to server.");
+                    //SendMessage("My login");
                     Debug.Log($"You have been connected to server.");
                     break;
                 case NetworkEventType.DataEvent:
